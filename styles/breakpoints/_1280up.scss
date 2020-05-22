@@ -1,0 +1,72 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+.news {
+  &__inner {
+    padding: 50px 40px 42px 40px;
+    margin-top: 130px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 39px 0;
+  }
+
+  &__date {
+    font-size: 18px;
+    width: 11%;
+  }
+
+  &__label {
+    font-size: 14px;
+    width: 11%;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-top: 0;
+    width: 65%;
+  }
+}
+
+.comments {
+  margin-top: 130px;
+
+  &__box {
+    padding: 80px 40px 130px 40px;
+  }
+
+  &__list {
+    margin-top: 80px;
+  }
+
+  .comments__item + .comments__item {
+    margin-top: 80px;
+  }
+}
+
+.qa {
+  height: 1065px;
+  background-position: center center;
+}
+.ac__wrapper {
+  position: absolute;
+  left: 47%;
+}
+#ac__menu {
+  .ac__inner {
+    margin-bottom: 45px;
+  }
+}
+
+.access {
+  .access__btn {
+    top: 39%;
+    width: 326px;
+  }
+}

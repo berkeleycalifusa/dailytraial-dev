@@ -1,0 +1,75 @@
+@import 'modules/variables';
+
+@import "breakpoints/base";
+
+@media (min-width: 480px) {
+  @import "breakpoints/480up";
+}
+
+@media (min-width: 600px) {
+  @import "breakpoints/600up";
+}
+
+@media (min-width: 768px) {
+  @import "breakpoints/768up";
+}
+
+@media (min-width: 960px) {
+  @import "breakpoints/960up";
+}
+
+@media (min-width: 1280px) {
+  @import "breakpoints/1280up";
+}
+
+@media (min-resolution: 192dpi)
+      ,(-webkit-min-device-pixel-ratio: 2) {
+    @import "breakpoints/2x";
+      }
+
+@media print {
+  @import "breakpoints/print";
+}
+
+body {
+  font-family: "Montserrat", "游ゴシック体", YuGothic, sans-serif;
+  line-height: 1.5;
+  background: #f3f3f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #3e3e3e;
+}
+
+
+.container {
+  max-width: 1180px;
+  width: 90%;
+  margin: auto;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+
+

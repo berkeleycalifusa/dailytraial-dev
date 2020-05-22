@@ -1,0 +1,422 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 18px;
+}
+.font-lr {
+  font-size: 20px;
+}
+.font-lg {
+  font-size: 36px;
+}
+
+.header {
+  background: $cBgheader;
+  height: 80px;
+
+  &__logo {
+    display: none;
+  }
+
+  &__nav-bar {
+    display: block;
+    max-width: 583px;
+    margin: auto;
+  }
+  &__nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 80px;
+    position: relative;
+  }
+
+  &__nav-item {
+    margin-left: 39px;
+  }
+
+  .under-line {
+    display: block;
+    position: relative;
+
+    &::before,
+    &::after {
+      border-bottom: 2px solid $cBlack;
+      bottom: 20px;
+      content: "";
+      display: block;
+      position: absolute;
+      transition: all 0.3s ease;
+      width: 0;
+    }
+
+    &::before {
+      left: 50%;
+    }
+    &::after {
+      right: 50%;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      width: 50%;
+    }
+  }
+}
+
+.drawer-hamburger-icon {
+  display: none;
+}
+
+.top {
+  .main-visual {
+    padding-top: 210px;
+    height: 650px;
+  }
+
+  .top-title-wrapper {
+    align-items: flex-end;
+  }
+
+  .title-inner {
+    padding-right: 20px;
+  }
+
+  .top__main-title {
+    font-size: 30px;
+    line-height: 1.7;
+  }
+
+  .top__sub-title {
+    .sp {
+      display: none;
+    }
+
+    .pc {
+      display: block;
+    }
+  }
+
+  .top-btn {
+    padding: 11px 37px;
+  }
+}
+
+.news {
+  .section-title {
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 55px;
+  }
+  &__date {
+    font-size: 18px;
+  }
+
+  &__label {
+    font-size: 14px;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+
+  &__btn {
+    width: 248px;
+    padding: 20px;
+  }
+}
+
+.service {
+  margin-top: 130px;
+  padding-top: 74px;
+
+  & ::after {
+    height: 400px;
+  }
+
+  .section-title {
+    padding-bottom: 75px;
+    font-size: 36px;
+  }
+
+  &__inner {
+    display: flex;
+    padding: 54px 44px;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    margin-bottom: 0;
+    width: 28%;
+  }
+
+  &__title {
+    font-size: 20px;
+  }
+
+  &__text {
+    margin-top: 18px;
+  }
+}
+
+.results {
+  margin-top: 130px;
+  margin-left: 92px;
+  padding: 80px 0 80px 110px;
+
+  .results-title {
+    text-align: left;
+    font-size: 36px;
+    padding-bottom: 69px;
+  }
+
+  .swiper-pagination {
+    bottom: -50px;
+    text-align: left;
+  }
+
+  .results-btn {
+    width: 301px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 100px;
+  }
+
+  .slide__text-wrapper {
+    padding: 20px;
+  }
+
+  .slide__title {
+    font-size: 20px;
+  }
+
+  .slide__sub-title {
+    font-size: 16px;
+  }
+}
+
+.price {
+  margin-top: 80px;
+
+  &__title {
+    padding-bottom: 80px;
+    font-size: 36px;
+  }
+
+  &__table {
+    & th {
+      font-size: 22px;
+      padding: 12px 14px;
+      width: 30%;
+    }
+
+    & td {
+      font-size: 20px;
+      padding-left: 44px;
+      width: 70%;
+    }
+  }
+
+  .price__sample {
+    margin-top: 20px;
+  }
+}
+
+.qa {
+  padding: 74px 0;
+  margin-top: 130px;
+
+  &__title {
+    padding-bottom: 70px;
+    font-size: 36px;
+  }
+}
+
+.access {
+  margin-top: 125px;
+
+  .addres__wrapper {
+    flex: 1;
+  }
+  .access__title {
+    font-size: 36px;
+  }
+
+  .addres__inner {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .gmap {
+    flex: 1.6;
+  }
+  .access__btn {
+    top: 43%;
+  }
+  .gmap__btn {
+    font-size: 20px;
+    padding: 10px 80px;
+  }
+}
+
+.contact {
+  margin-top: 132px;
+  padding: 80px 40px;
+
+  &__header {
+    padding: 52px 0 55px;
+  }
+
+  &__title {
+    font-size: 36px;
+  }
+
+  &__content {
+    padding: 56px 90px 58px;
+  }
+
+  &__list {
+    font-size: 20px;
+  }
+
+  &__item + &__item {
+    margin-top: 30px;
+  }
+
+  &__item:not(.mod-message) {
+    display: flex;
+  }
+
+  & input[type="text"],
+  & input[type="email"] {
+    font-size: 22px;
+  }
+
+  & select {
+    margin-left: 80px;
+  }
+
+  & select select {
+    letter-spacing: 5em;
+    width: 260px;
+
+    &:hover {
+      box-shadow: 0 0 4px $cBule;
+    }
+  }
+
+  & textarea {
+    font-size: 22px;
+    height: 212px;
+    margin-top: 16px;
+
+    &:hover {
+      border-color: $cBule;
+      box-shadow: 0 0 4px $cBule;
+    }
+  }
+
+  &__input-box {
+    flex: 0 1 100%;
+    margin-left: 80px;
+  }
+
+  &__requirelabel {
+    font-size: 16px;
+    margin-left: auto;
+    padding: 0 12px;
+  }
+
+  &__privacy {
+    margin-top: 22px;
+  }
+
+  &__privacy-label {
+    font-size: 18px;
+    padding-left: 42px;
+
+    &::before {
+      height: 20px;
+      width: 20px;
+    }
+    &::after {
+      left: 4px;
+      top: 9px;
+    }
+
+    &:hover::before {
+      border-color: $cBule;
+      box-shadow: 0 0 4px $cBule;
+    }
+    &:active::before {
+      background-color: rgba(73, 115, 255, 0.2);
+      box-shadow: none;
+    }
+  }
+
+  &__radio + &__radio {
+    width: 20%;
+  }
+
+  &__radio-label:hover:before {
+    border-color: $cBule;
+    box-shadow: 0 0 4px $cBule;
+  }
+
+  &__radio-label:active:before {
+    background-color: rgba(73, 115, 255, 0.2);
+    box-shadow: none;
+  }
+
+  &__btn {
+    margin-top: 23px;
+  }
+}
+
+.footer {
+  padding: 120px 0;
+  .container {
+    position: relative;
+  }
+  &__sns-list {
+    display: inline-block;
+  }
+  &__sns-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  &__nav-list {
+    flex-direction: column;
+  }
+
+  &__nav-item {
+    margin: 0 0 14px 0;
+    font-size: 18px;
+  }
+
+  &__logo-wrapper {
+    position: absolute;
+    top: 5%;
+    right: 0;
+  }
+
+  &__logo {
+    font-size: 41px;
+  }
+
+  &__copy {
+    text-align: right;
+    margin-top: 15px;
+  }
+}
+
+.page-top {
+  bottom: 58px;
+  right: 90px;
+}

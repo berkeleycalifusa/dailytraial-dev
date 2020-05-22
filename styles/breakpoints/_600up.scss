@@ -1,0 +1,44 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+.top {
+  .top-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top__main-title {
+    font-size: 30px;
+  }
+
+  .top__sub-title {
+    font-size: 18px;
+  }
+
+  .btn-wrapper {
+    text-align: left;
+  }
+}
+
+.news {
+  &__inner {
+    padding: 40px 20px;
+    margin-top: 60px;
+  }
+
+  &__wrapper {
+    padding: 20px 16px;
+  }
+}
+
+.footer {
+  &__nav-item {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
